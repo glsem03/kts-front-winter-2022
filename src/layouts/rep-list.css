@@ -420,6 +420,7 @@ body {
 .git-repo-tile {
     display: flex;
     align-items: center;
+    line-height: 19px;
     width: 357px;
     background-color: var(--color-white);
     padding: 12px;
@@ -445,7 +446,8 @@ body {
 .git-repo-tile__org-link {
     color: var(--color-hint);
     text-decoration: none;
-    margin-bottom: 4px;
+    margin-top: 4px;
+    line-height: 16px;
 }
 .git-repo-tile__org-link:hover {
     color:var(--color-link);
@@ -459,6 +461,9 @@ body {
 .git-repo-tile__views {
   width: 44px;
 }
+.git-repo-tile__views > span {
+  line-height: 16px;
+}
 .git-repo-tile__stats-views {
     display: flex;
     align-items: center;
@@ -468,13 +473,14 @@ body {
 }
 .git-repo-tile__star {
     margin-right: 4px;
-    vertical-align:top;
+    vertical-align: text-top;
     width: 14px;
     height: 14px;
 }
 
 .git-repo-tile__stats {
     display: flex;
+    margin-top: 4px;
     width: 100%;
 }
 .git-repo-tile__stats-update {
